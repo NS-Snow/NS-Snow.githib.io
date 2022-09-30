@@ -1,0 +1,33 @@
+body {
+    background-color:#fefefe;
+    color: hwb(0 0% 100%);
+}
+ul{
+    list-style-type: "\1F44D";
+}
+ol {
+    list-style-type: lower-alpha;
+}
+
+h1 {
+    color: rgb(5, 5, 0);
+    font-size: 32px;
+}
+p {
+    color: rgb(197, 3, 3);
+    font-size: 20px;
+}
+#cat {
+    width: 128px;
+}
+
+.nothing {
+    color: #6c4040;
+}
+
+.A {
+    color: #5900ff;  
+}
+#s1 :hover {
+    color: #444444;
+}
