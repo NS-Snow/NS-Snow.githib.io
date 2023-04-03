@@ -6,13 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body onload="show()";>
-    <h1 id="title1">Hello welcome to my website</h1>
-    <h2 id="introduce">Game : Overwatch Apex Valorant</h2>
-    <img src="1.jpg" />
-    <div class="btn1" onclick="toggle_info();">just click it</div>
+<body onload="startTime();show();setClock()"  style="background-color:gray;" >
+    <div class="element">
+    <div id="introduce4" class="container-c">
+
+        <div class="clock">
+
+            <!-- 小時的數字 -->
+            <div class="hour hr1">1</div>
+            <div class="hour hr2">2</div>
+            <div class="hour hr3">3</div>
+            <div class="hour hr4">4</div>
+            <div class="hour hr5">5</div>
+            <div class="hour hr6">6</div>
+            <div class="hour hr7">7</div>
+            <div class="hour hr8">8</div>
+            <div class="hour hr9">9</div>
+            <div class="hour hr10">10</div>
+            <div class="hour hr11">11</div>
+            <div class="hour hr12">12</div>
+            <!-- 小圓點 -->
+            <div class="point"></div>
+            <!-- 秒針、分針、時針 -->
+            <div class="hand hour-hand" id="hour-hand" data-hour-hand></div>
+            <div class="hand minute-hand" id="minute-hand" data-minute-hand></div>
+            <div class="hand second-hand" id="second-hand" data-second-hand></div>
+        </div>
+    </div>
+
+    <div id="introduce3" class="container-clock">
+        <div class="datetime">
+        <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+        </div>
+        <div class="date">
+        <span id="dayname">星期</span>,
+        <span id="month">月</span>
+        <span id="daynum">00</span>日,
+        <span id="year">year</span>年
+        </div>
+        </div>
+        </div>
+        
+        <div style="text-align:center" >
+            <button class="btn1" onclick="toggle_info1();">introduce</button> 
+            <button class="btn1" onclick="toggle_info6();">link</button> 
+            <button class="btn1" onclick="toggle_info2();">timer</button> 
+            <button class="btn1" onclick="toggle_info3();">clock1</button>
+            <button class="btn1" onclick="toggle_info4();">clock2</button>
+            <button class="btn1" onclick="toggle_info5();">log out</button>
+        </div>
+        <div id="introduce6">
+            <a href="http://www.example.com" target="_blank" class="button">
+                <img src="line.png" alt="button image" class="link">
+                <img src="discord .png" alt="button image" class="link">
+                <img src="twitter.png" alt="button image" class="link">
+              </a>
+        </div>
+        <h1 id="title1">大家好</h1>
+        <h2 id="introduce_hobby">我是20622許凱博</h2>
+    <div id="titleword">
+        
+        <div id="introduce">
+            <h2 >我的興趣:資安&音樂</h2>
+            <h2 >我玩的遊戲:APEX Valorant Overwatch 雀魂等</h2>
+    </div>
+    </div>    
+
     <script src="scripts/js.js"></script>
+    
     <div id="introduce2" class="container">
         <h3>timer</h3>
         <span id="time"></span>
@@ -21,9 +88,11 @@
         <button class="btn" type="button" onclick="reset();">清除</button>
         
     
-    <p>press Space to start/stop</p>
-    <p>press C to clean</p>
+    <p id="word">press Space to start/stop</p>
+    <p id="word">press C to clean</p>
     </div>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
